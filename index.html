@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0D0D0D" />
+  <title>TTB Bar & Restaurant — Burundi</title>
+  <link rel="icon" href="images/ttbBarRestaurantLogo.jpeg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- TOP BAR: Réserver | Service | Gallery (texts are filled by script.js) -->
+  <nav class="topbar">
+    <button data-open="reserve"><span class="ic">📅</span><b data-i="reserve"></b></button>
+    <button data-open="service"><span class="ic">🔔</span><b data-i="service"></b></button>
+    <a href="#gallery"><span class="ic">🖼️</span><b data-i="gallery"></b></a>
+  </nav>
+
+  <!-- HEADER: language switcher (right corner, home page only), logo, search -->
+  <header class="head">
+    <div class="lang" id="lang"><!-- language buttons are created by script.js --></div>
+    <a href="#"><img class="logo" src="images/ttbBarRestaurantLogo.jpeg" alt="TTB Logo" /></a>
+    <input id="search" type="search" data-ph="search" autocomplete="off" />
+  </header>
+
+  <!-- MAIN: script.js fills this with the home grid, a category, or the gallery -->
+  <main id="app"></main>
+
+  <!-- FOOTER -->
+  <footer class="foot">
+    <div class="foot-grid">
+      <div><b class="brand">TTB Bar &amp; Restaurant</b><p data-i="about"></p></div>
+      <div><h5 data-i="contact"></h5>
+        <p>📍 Butanyerera / Ngozi, Burundi</p>
+        <p>🕐 <span data-i="hours"></span></p>
+        <p><a href="tel:+25768857061">📞 +257 68 857 061</a></p>
+        <p><a href="mailto:info@ttbrestaurant.bi">✉️ info@ttbrestaurant.bi</a></p>
+      </div>
+      <div><h5 data-i="follow"></h5>
+        <a class="btn green" target="_blank" href="https://wa.me/25768857061?text=Hello%20TTB!">WhatsApp</a>
+        <a class="btn" target="_blank" href="https://facebook.com/your-ttb-page">Facebook</a>
+      </div>
+    </div>
+    <p class="copy">© 2025 TTB Bar &amp; Restaurant · Powered by
+      <a href="https://hppeter.vercel.app" target="_blank" rel="noopener">HP PETER TECH STUDIO</a></p>
+  </footer>
+
+  <!-- POPUP: Reserve a table (sent to WhatsApp) -->
+  <dialog id="reserve"><form id="rform">
+    <button type="button" class="x" data-close>✕</button>
+    <h2 data-i="reserve"></h2><p class="sub" data-i="reserveSub"></p>
+    <div class="fields">
+      <label><span data-i="people"></span><input name="people" type="number" min="1" required /></label>
+      <label><span data-i="name"></span><input name="name" required /></label>
+      <label><span data-i="date"></span><input name="date" type="date" required /></label>
+      <label><span data-i="time"></span><input name="time" type="time" required /></label>
+      <label class="full"><span data-i="event"></span><select name="event" id="evsel"></select></label>
+      <label class="full"><span>WhatsApp</span><input name="phone" type="tel" value="+257" required /></label>
+    </div>
+    <button class="btn primary full" data-i="confirm"></button>
+  </form></dialog>
+
+  <!-- POPUP: Services (each opens WhatsApp) -->
+  <dialog id="service"><div class="box">
+    <button type="button" class="x" data-close>✕</button>
+    <h2 data-i="service"></h2><p class="sub" data-i="serviceSub"></p>
+    <div class="svc-grid" id="svcgrid"></div>
+  </div></dialog>
+
+  <!-- FULL-SCREEN gallery image with description and X -->
+  <div id="lightbox" hidden>
+    <button class="x" data-close-lb>✕</button>
+    <img id="lb-img" alt="" /><div><h3 id="lb-t"></h3><p id="lb-d"></p></div>
+  </div>
+
+  <script src="data.js"></script>   <!-- your menu, services and gallery data -->
+  <script src="script.js"></script> <!-- the logic -->
+</body>
+</html>
