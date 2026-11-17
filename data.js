@@ -353,6 +353,42 @@ const MENU = [
     "p": "40,000 BIF"
    },
    {
+  "n": {
+    "fr": "Brochette simple (Viande grillée)",
+    "en": "Plain Brochette (Grilled Meat)",
+    "ki": "Brochette isanzwe (Inyama zokeje)",
+    "sw": "Mshikaki wa kawaida (Nyama choma)"
+  },
+  "p": "8,000 BIF"
+},
+{
+  "n": {
+    "fr": "Viande",
+    "en": "Meat",
+    "ki": "Inyama",
+    "sw": "Nyama"
+  },
+  "p": "7,000 BIF"
+},
+{
+  "n": {
+    "fr": "Champignons comestibles",
+    "en": "Edible Mushrooms",
+    "ki": "Ibizinu",
+    "sw": "Uyoga wa kula"
+  },
+  "p": "10,000 BIF"
+},
+   {
+  "n": {
+    "fr": "Brochettes accompagnées (Viande grillée, frites, salade et sauce)",
+    "en": "Brochettes with Sides (Grilled Meat, Fries, Salad and Sauce)",
+    "ki": "Brochette akompanye (Inyama zokeje, ifiriti, salade n'isosi)",
+    "sw": "Nyama choma ya mishikaki (Viazi vya kukaanga, saladi na mchuzi)"
+  },
+  "p": " 15,000 BIF"
+},
+   {
     "n": {
      "fr": "Mukeke Grillé",
      "en": "Grilled Mukeke",
@@ -506,6 +542,15 @@ const MENU = [
     },
     "p": "6,000 BIF"
    },
+   {
+  "n": {
+    "fr": "Thé noir (sans lait)",
+    "en": "Black Tea (Without Milk)",
+    "ki": "Icayi c'irangi",
+    "sw": "Chai ya rangi (bila maziwa)"
+  },
+  "p": "3,000 BIF"
+},
    {
     "n": {
      "fr": "Lait Chaud",
@@ -727,6 +772,15 @@ const MENU = [
     "p": "15,000 BIF"
    },
    {
+  "n": {
+    "fr": "Zingaro (Viande et abats de chèvre)",
+    "en": "Zingaro (Goat Meat and Offal)",
+    "ki": "Zingaro (Inyama n'ibihimba vy'ihene)",
+    "sw": "Zingaro (Nyama na viungo vya ndani vya mbuzi)"
+  },
+  "p": "15,000 BIF"
+},
+   {
     "n": "Agatoki",
     "p": "8,000 BIF"
    },
@@ -757,6 +811,24 @@ const MENU = [
     },
     "p": "4,000 BIF"
    },
+   {
+  "n": {
+    "fr": "Isembe (Pâte de maïs)",
+    "en": "Isembe (Maize Paste)",
+    "ki": "Isembe (Ubugari bw'ibigori)",
+    "sw": "Isembe (Ugali wa mahindi)"
+  },
+  "p": "4,000 BIF"
+},
+{
+  "n": {
+    "fr": "Pâte de blé",
+    "en": "Wheat Ugali",
+    "ki": "Ubugari bw'ingano",
+    "sw": "Ugali wa ngano"
+  },
+  "p": "5,000 BIF"
+},
    {
     "n": {
      "fr": "Frites",
@@ -793,6 +865,42 @@ const MENU = [
     },
     "p": "4,000 BIF"
    },
+   {
+  "n": {
+    "fr": "Petits pois",
+    "en": "Green Peas",
+    "ki": "Amashaza",
+    "sw": "Njegere"
+  },
+  "p": "5,000 BIF"
+},
+{
+  "n": {
+    "fr": "Lengalenga (Légumes verts traditionnels)",
+    "en": "Lengalenga (Traditional Leafy Greens)",
+    "ki": "Irengarenga",
+    "sw": "Lengalenga (Mboga za majani)"
+  },
+  "p": " 2,000 BIF"
+},
+{
+  "n": {
+    "fr": "Choux",
+    "en": "Cabbage",
+    "ki": "Amashu",
+    "sw": "Kabichi"
+  },
+  "p": " 2,000 BIF"
+},
+{
+  "n": {
+    "fr": "Colocase",
+    "en": "Taro",
+    "ki": "Amateke",
+    "sw": "Magimbi"
+  },
+  "p": " 5,000 BIF"
+},
    {
     "n": "Amarante",
     "p": "4,000 BIF"
@@ -894,6 +1002,55 @@ const MENU = [
      "sw": "Heineken"
     },
     "p": "8,000 – 12,000 BIF"
+   },
+   {
+  "n": {
+    "fr": "Bière Bavaria (5% alcool)",
+    "en": "Bavaria Beer (5% Alcohol)",
+    "ki": "Inzoga Bavaria (5% alcool)",
+    "sw": "Bia ya Bavaria (5% pombe)"
+  },
+  "p": " 8,000 – 12,000 BIF"
+}
+   ,{
+    "n": "Bechou Blonde",
+    "p": "5,000 \u2013 7,000 BIF"
+   }
+   ,{
+    "n": "Bechou Bright",
+    "p": "5,000 \u2013 7,000 BIF"
+   }
+   ,{
+    "n": "Primus Star P.",
+    "p": "4,000 \u2013 6,000 BIF"
+   }
+   ,{
+    "n": "Royal",
+    "p": "5,000 \u2013 8,000 BIF"
+   }
+   ,{
+    "n": "Buryohe",
+    "p": "4,000 \u2013 6,000 BIF"
+   }
+   ,{
+    "n": "Basembi",
+    "p": "4,000 \u2013 6,000 BIF"
+   }
+   ,{
+    "n": "Leff",
+    "p": "8,000 \u2013 12,000 BIF"
+   }
+   ,{
+    "n": "Stella",
+    "p": "8,000 \u2013 12,000 BIF"
+   }
+   ,{
+    "n": "Gold Belge",
+    "p": "8,000 \u2013 12,000 BIF"
+   }
+   ,{
+    "n": "Akanovera",
+    "p": "4,000 \u2013 6,000 BIF"
    }
   ]
  },
@@ -940,12 +1097,62 @@ const MENU = [
    },
    {
     "n": {
-     "fr": "Eau Minérale (Petite)",
-     "en": "Bottled Water (Small)",
-     "ki": "Amazi",
-     "sw": "Maji ya Chupa"
+      "fr": "Amazi (Kinju)",
+      "en": "Amazi (Kinju)",
+      "ki": "Amazi (Kinju)",
+      "sw": "Amazi (Kinju)"
     },
-    "p": "2,000 – 3,500 BIF"
+    "p": "3,000 BIF"
+  },
+  {
+    "n": {
+      "fr": "Amazi (Sangwe)",
+      "en": "Amazi (Sangwe)",
+      "ki": "Amazi (Sangwe)",
+      "sw": "Amazi (Sangwe)"
+    },
+    "p": "2,500 BIF"
+  },
+  {
+    "n": {
+      "fr": "Amazi (Buzima)",
+      "en": "Amazi (Buzima)",
+      "ki": "Amazi (Buzima)",
+      "sw": "Amazi (Buzima)"
+    },
+    "p": "2,500 BIF"
+  },
+   {
+    "n": "Soma",
+    "p": "2,500 \u2013 4,000 BIF"
+   }
+   ,{
+    "n": "Milinda",
+    "p": "2,500 \u2013 4,000 BIF"
+   }
+   ,{
+    "n": "Furaha",
+    "p": "2,500 \u2013 4,000 BIF"
+   }
+   ,{
+    "n": "Exo",
+    "p": "2,500 \u2013 4,000 BIF"
+   }
+   ,{
+    "n": "Inyange",
+    "p": "3,000 \u2013 5,000 BIF"
+   }
+   ,{
+    "n": "Coca-Cola P.",
+    "p": "2,500 \u2013 4,000 BIF"
+   }
+   ,{
+    "n": "Jambo",
+    "p": "2,500 \u2013 4,000 BIF"
+   }
+   ,{
+    "n": "Raha",
+    "p": "2,500 \u2013 4,000 BIF"
    }
   ]
  },
@@ -968,7 +1175,7 @@ const MENU = [
      "ki": "Fursana ",
      "sw": "Fursana"
     },
-    "p": "3,000 – 5,000 BIF"
+    "p": "2500 BIF"
    },
    {
     "n": {
@@ -977,7 +1184,7 @@ const MENU = [
      "ki": "Pome",
      "sw": "Apple Juice"
     },
-    "p": "3,000 – 5,000 BIF"
+    "p": "2500 BIF"
    },
    {
     "n": {
@@ -986,17 +1193,44 @@ const MENU = [
      "ki": "Oranje",
      "sw": "Juisi ya Chungwa"
     },
-    "p": "3,500 – 6,000 BIF"
+    "p": "2500 BIF"
    },
    {
-    "n": {
-     "fr": "Jus Frais (Ananas, Passion, Mangue, Orange)",
-     "en": "Fresh Juice (Pineapple, Passion, Mango, Orange)",
-     "ki": "imitobe Mashya (Inanasi, Passion, Mangue, Oranjo)",
-     "sw": "Juisi Safi (Nanasi, Passion, Embe, Chungwa)"
-    },
-    "p": "4,000 – 7,000 BIF"
-   },
+  "n": {
+    "fr": "Jus d'orange frais",
+    "en": "Fresh Orange Juice",
+    "ki": "Umutobe w'icunga",
+    "sw": "Juisi ya Chungwa"
+  },
+  "p": "2,500 BIF"
+},
+{
+  "n": {
+    "fr": "Jus d'ananas frais",
+    "en": "Fresh Pineapple Juice",
+    "ki": "Umutobe w'inanasi",
+    "sw": "Juisi ya Nanasi"
+  },
+  "p": "2,500 BIF"
+},
+{
+  "n": {
+    "fr": "Jus de fruit de la passion frais",
+    "en": "Fresh Passion Fruit Juice",
+    "ki": "Umutobe wa marakuja",
+    "sw": "Juisi ya Passion"
+  },
+  "p": "2,500 BIF"
+},
+{
+  "n": {
+    "fr": "Jus de mangue frais",
+    "en": "Fresh Mango Juice",
+    "ki": "Umutobe w'ipapayi rya mango",
+    "sw": "Juisi ya Embe"
+  },
+  "p": "2,500 BIF"
+},
    {
     "n": {
      "fr": "Jus Mixte / Smoothie",
@@ -1005,6 +1239,42 @@ const MENU = [
      "sw": "Juisi Mchanganyiko / Smoothie"
     },
     "p": "5,000 – 8,000 BIF"
+   }
+   ,{
+    "n": "OJ G.",
+    "p": "5,000 \u2013 8,000 BIF"
+   }
+   ,{
+    "n": "OJ P.",
+    "p": "3,000 \u2013 5,000 BIF"
+   }
+   ,{
+    "n": "Energy jus",
+    "p": "4,000 \u2013 6,000 BIF"
+   }
+   ,{
+    "n": "Drip Jus",
+    "p": "3,000 \u2013 5,000 BIF"
+   }
+   ,{
+    "n": "Embe",
+    "p": "3,000 \u2013 5,000 BIF"
+   }
+   ,{
+    "n": "Fanta Jus",
+    "p": "2,500 \u2013 4,000 BIF"
+   }
+   ,{
+    "n": "Ananas",
+    "p": "3,000 \u2013 5,000 BIF"
+   }
+   ,{
+    "n": "Pome",
+    "p": "3,000 \u2013 5,000 BIF"
+   }
+   ,{
+    "n": "Maracudja",
+    "p": "3,000 \u2013 5,000 BIF"
    }
   ]
  },
@@ -1038,6 +1308,10 @@ const MENU = [
     },
     "p": "3,500 – 5,500 BIF"
    }
+   ,{
+    "n": "Combuca",
+    "p": "4,000 \u2013 6,000 BIF"
+   }
   ]
  },
  {
@@ -1068,6 +1342,18 @@ const MENU = [
    {
     "n": "Maltina / Viva Malt",
     "p": "3,000 – 4,500 BIF"
+   }
+   ,{
+    "n": "RedBull",
+    "p": "5,000 \u2013 8,000 BIF"
+   }
+   ,{
+    "n": "Kick",
+    "p": "3,500 \u2013 5,500 BIF"
+   }
+   ,{
+    "n": "Black",
+    "p": "3,500 \u2013 5,500 BIF"
    }
   ]
  },
@@ -1100,6 +1386,14 @@ const MENU = [
      "sw": "Pombe ya Mtama (Impeke)"
     },
     "p": "2,500 – 5,000 BIF"
+   }
+   ,{
+    "n": "Hansams",
+    "p": "3,000 \u2013 5,000 BIF"
+   }
+   ,{
+    "n": "Hansens",
+    "p": "3,000 \u2013 5,000 BIF"
    }
   ]
  },
@@ -1151,6 +1445,146 @@ const MENU = [
     },
     "p": "35,000 – 60,000 BIF"
    }
+   ,{
+    "n": "Smirnoff",
+    "p": "8,000 \u2013 15,000 BIF"
+   }
+   ,{
+    "n": "Marti Petit",
+    "p": "8,000 \u2013 12,000 BIF"
+   }
+   ,{
+    "n": "Van G.",
+    "p": "8,000 \u2013 12,000 BIF"
+   }
+   ,{
+    "n": "Van P.",
+    "p": "8,000 \u2013 12,000 BIF"
+   }
+   ,{
+    "n": "Cellerdo",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Drostdy G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Drostdy P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "Cellar",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Burasine Blanc",
+    "p": "20,000 \u2013 35,000 BIF"
+   }
+   ,{
+    "n": "Burasine Jaune G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Burasine Jaune P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "Dompo G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Dompo P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "Altelis",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Image G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Image P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "Allita",
+    "p": "20,000 \u2013 35,000 BIF"
+   }
+   ,{
+    "n": "Torero G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Torero P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "Konyagi G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Konyagi P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "K. Vant G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "K. Vant P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "Vodka",
+    "p": "8,000 \u2013 15,000 BIF"
+   }
+   ,{
+    "n": "Oxenhams",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Alter Wine G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Alter Wine P.",
+    "p": "15,000 \u2013 25,000 BIF"
+   }
+   ,{
+    "n": "Heven",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "United",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Henessy",
+    "p": "35,000 \u2013 60,000 BIF"
+   }
+   ,{
+    "n": "Akuki G.",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+   ,{
+    "n": "Valeur",
+    "p": "25,000 \u2013 40,000 BIF"
+   }
+  ]
+ },
+ {
+  "id": "buffet",
+  "g": "food",
+  "e": "🍛",
+  "n": { "fr": "Buffet, de 11:00 à 15:00", "en": "Buffet, 11:00 AM - 3:00 PM", "ki": "Buffet(Kwiyarurira),kuva satanu gushika sacenda zumurango", "sw": "Buffet, 11:00 AM - 3:00 PM" },
+  "img": "images/ttbBuffet.png",
+  "info": true,   // true = information only: no WhatsApp order button on this category's items
+  "items": [
+   { "n": { "fr": "Buffet à volonté (sans viande ni champignons)", "en": "All-you-can-eat Buffet (without meat or mushrooms)", "ki": "Buffet ushobora kurya uguhaza (ata nyama canke ibihumyo)", "sw": "Buffet ya kula upendavyo (bila nyama wala uyoga)" }, "p": "10,000 BIF" },
+   { "n": { "fr": "Buffet à volonté (avec viande ou champignons comestibles)", "en": "All-you-can-eat Buffet (with meat or edible mushrooms)", "ki": "Buffet ushobora kurya uguhaza (harimwo inyama canke ibizinu)", "sw": "Buffet ya kula upendavyo (pamoja na nyama au uyoga wa kuliwa)" }, "p": "13,000 BIF" }
   ]
  }
 ];
@@ -1169,6 +1603,16 @@ const SERVICES = [
    "ki": "Nimuhimbarwe n’uburyohe nyakuri bw’u Burundi hamwe n’ibifungurwa biryoshe vyo mu mahanga, vyateguranywe ubwitonzi.",
    "sw": "Furahia ladha halisi za Burundi pamoja na vyakula vitamu vya kimataifa, vilivyoandaliwa kwa uangalifu."
   }
+ },
+ {
+  "e": "🍛",
+  "n": { "en": "Buffet, 11:00 AM - 3:00 PM", "fr": "Buffet, de 11:00 à 15:00", "ki": "Buffet(Kwiyarurira)", "sw": "Buffet" },
+  "d": {
+  "en": "Enjoy a wide variety of dishes at our buffet from 11:00 AM to 3:00 PM : 10,000 BIF, or 13,000 BIF with meat or edible mushrooms.",
+  "fr": "Savourez une grande variété de plats à notre buffet de 11h00 à 15h00 : 10 000 BIF, ou 13 000 BIF avec viande ou champignons comestibles.",
+  "ki": "Nimuryoherwe no kwiyarurira imfungurwa zitandukanye muri buffet yacu kuva isaha zitanu gushika isaha icenda : 10.000 BIF, canke 13.000 BIF harimwo inyama canke ibizinu.",
+  "sw": "Furahia aina nyingi za vyakula kwenye buffet yetu kuanzia saa tano asubuhi hadi saa tisa alasiri : 10,000 BIF, au 13,000 BIF pamoja na nyama au uyoga wa kuliwa."
+}
  },
  {
   "e": "🍹",
