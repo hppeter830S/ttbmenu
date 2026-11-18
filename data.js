@@ -836,7 +836,7 @@ const MENU = [
       "ki": "Imyumbati",
       "sw": "Muhogo"
     },
-    "p": "À préciser"
+    "p": "4,000 BIF"
   },
 {
   "n": {
