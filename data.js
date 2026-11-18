@@ -821,6 +821,24 @@ const MENU = [
   "p": "4,000 BIF"
 },
 {
+    "n": {
+      "fr": "Pate de manioc",
+      "en": "Cassava Ugali",
+      "ki": "Ubugari bw'imyumbati",
+      "sw": "Ugali wa muhogo"
+    },
+    "p": "4,000 BIF"
+  },
+  {
+    "n": {
+      "fr": "Manioc",
+      "en": "Cassava",
+      "ki": "Imyumbati",
+      "sw": "Muhogo"
+    },
+    "p": "À préciser"
+  },
+{
   "n": {
     "fr": "Pâte de blé",
     "en": "Wheat Ugali",
