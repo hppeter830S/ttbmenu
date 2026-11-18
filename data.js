@@ -588,6 +588,15 @@ const MENU = [
    },
    {
     "n": {
+     "fr": "Pain",
+     "en": "Bread",
+     "ki": "Umukate",
+     "sw": "Mkate"
+    },
+    "p": "2,000 BIF"
+   },
+   {
+    "n": {
      "fr": "Café Africain",
      "en": "African Coffee",
      "ki": "Ikawa ya Afrika",
@@ -887,7 +896,7 @@ const MENU = [
   "n": {
     "fr": "Petits pois",
     "en": "Green Peas",
-    "ki": "Amashaza",
+    "ki": "Ubushaza / Ubwishaza",
     "sw": "Njegere"
   },
   "p": "5,000 BIF"
@@ -952,7 +961,7 @@ const MENU = [
    {
     "n": {
      "fr": "Plat 5 Personnes (Igisahani)",
-     "en": "5-Person Platter (Igisahani)",
+     "en": "5 Person Platter (Igisahani)",
      "ki": "Igisahani (Abantu 5)",
      "sw": "Sahani ya Watu 5"
     },
@@ -965,10 +974,10 @@ const MENU = [
   "g": "drinks",
   "e": "🍺",
   "n": {
-   "fr": "Bières — Alcoolisées",
-   "en": "Beers — Alcoholic",
-   "ki": "Inzoga — Zifise Arkoro",
-   "sw": "Bia — Zina Pombe"
+   "fr": "Bières Alcoolisées",
+   "en": "Beers Alcoholic",
+   "ki": "Inzoga Zifise Arkoro",
+   "sw": "Bia Zina Pombe"
   },
   "img": "images/primus.png",
   "items": [
@@ -1040,7 +1049,7 @@ const MENU = [
    }
    ,{
     "n": "Primus Star P.",
-    "p": "4,000 \u2013 6,000 BIF"
+    "p": "4,000"
    }
    ,{
     "n": "Royal",
@@ -1077,10 +1086,10 @@ const MENU = [
   "g": "drinks",
   "e": "🥤",
   "n": {
-   "fr": "Sodas & Eaux — Sans Alcool",
-   "en": "Sodas & Water — Non-Alcoholic",
-   "ki": "Amasoda — Nta Arkoro",
-   "sw": "Soda na Maji — Bila Pombe"
+   "fr": "Sodas & Eaux Sans Alcool",
+   "en": "Sodas & Water Non Alcoholic",
+   "ki": "Amasoda Nta Arkoro",
+   "sw": "Soda na Maji Bila Pombe"
   },
   "img": "images/coca cola.png",
   "items": [
@@ -1115,28 +1124,28 @@ const MENU = [
    },
    {
     "n": {
-      "fr": "Amazi (Kinju)",
-      "en": "Amazi (Kinju)",
+      "fr": "Eau (Kinju)",
+      "en": "Water (Kinju)",
       "ki": "Amazi (Kinju)",
-      "sw": "Amazi (Kinju)"
+      "sw": "Maji (Kinju)"
     },
     "p": "3,000 BIF"
   },
   {
     "n": {
-      "fr": "Amazi (Sangwe)",
-      "en": "Amazi (Sangwe)",
+      "fr": "Eau (Sangwe)",
+      "en": "Water (Sangwe)",
       "ki": "Amazi (Sangwe)",
-      "sw": "Amazi (Sangwe)"
+      "sw": "Maji (Sangwe)"
     },
     "p": "2,500 BIF"
   },
   {
     "n": {
-      "fr": "Amazi (Buzima)",
-      "en": "Amazi (Buzima)",
+      "fr": "Eau (Buzima)",
+      "en": "Water (Buzima)",
       "ki": "Amazi (Buzima)",
-      "sw": "Amazi (Buzima)"
+      "sw": "Maji (Buzima)"
     },
     "p": "2,500 BIF"
   },
@@ -1179,10 +1188,10 @@ const MENU = [
   "g": "drinks",
   "e": "🍊",
   "n": {
-   "fr": "Jus & Boissons Fruitées — Sans Alcool",
-   "en": "Juices & Fruit Drinks — Non-Alcoholic",
-   "ki": "imitobe y'Imbuto — Nta arkoro",
-   "sw": "Juisi za Matunda — Bila Pombe"
+   "fr": "Jus & Boissons Fruitées Sans Alcool",
+   "en": "Juices & Fruit Drinks Non-Alcoholic",
+   "ki": "imitobe y'Imbuto Nta arkoro",
+   "sw": "Juisi za Matunda Bila Pombe"
   },
   "img": "images/fursana.png",
   "items": [
@@ -1301,10 +1310,10 @@ const MENU = [
   "g": "drinks",
   "e": "🫚",
   "n": {
-   "fr": "Gingembre & Spécialités — Sans Alcool",
-   "en": "Ginger & Specialty — Non-Alcoholic",
-   "ki": "Tangawizi — Nta Arkoro",
-   "sw": "Tangawizi — Bila Pombe"
+   "fr": "Gingembre & Spécialités Sans Alcool",
+   "en": "Ginger & Specialty Non-Alcoholic",
+   "ki": "Tangawizi Nta Arkoro",
+   "sw": "Tangawizi Bila Pombe"
   },
   "img": "images/jusTangawizi.png",
   "items": [
@@ -1337,10 +1346,10 @@ const MENU = [
   "g": "drinks",
   "e": "⚡",
   "n": {
-   "fr": "Énergie & Malt — Sans Alcool",
-   "en": "Energy & Malt — Non-Alcoholic",
-   "ki": "Enerji — Nta Arkoro",
-   "sw": "Vinywaji vya Nguvu — Bila Pombe"
+   "fr": "Énergie & Malt Sans Alcool",
+   "en": "Energy & Malt Non-Alcoholic",
+   "ki": "Enerji Nta Arkoro",
+   "sw": "Vinywaji vya Nguvu Bila Pombe"
   },
   "img": "images/kabisaEnergyDrink.png",
   "items": [
@@ -1380,10 +1389,10 @@ const MENU = [
   "g": "drinks",
   "e": "🏺",
   "n": {
-   "fr": "Boissons Locales Traditionnelles — Alcoolisées",
-   "en": "Traditional Local Drinks — Alcoholic",
-   "ki": "Inzoga kama — Zifise Arkoro",
-   "sw": "Vinywaji vya Jadi — Vina Pombe"
+   "fr": "Boissons Locales Traditionnelles Alcoolisées",
+   "en": "Traditional Local Drinks Alcoholic",
+   "ki": "Inzoga kama Zifise Arkoro",
+   "sw": "Vinywaji vya Jadi Vina Pombe"
   },
   "img": "images/urwarwa.png",
   "items": [
@@ -1420,10 +1429,10 @@ const MENU = [
   "g": "drinks",
   "e": "🍹",
   "n": {
-   "fr": "Cocktails, Vins & Spiritueux — Alcoolisés",
-   "en": "Cocktails, Wine & Spirits — Alcoholic",
-   "ki": "Cocktails n'Inzoga — Zifise Arkoro",
-   "sw": "Cocktails, Divai — Zina Pombe"
+   "fr": "Cocktails, Vins & Spiritueux Alcoolisés",
+   "en": "Cocktails, Wine & Spirits Alcoholic",
+   "ki": "Cocktails n'Inzoga Zifise Arkoro",
+   "sw": "Cocktails, Divai Zina Pombe"
   },
   "img": "images/cocktailClassic.png",
   "items": [
@@ -1641,10 +1650,10 @@ const SERVICES = [
    "sw": "Bar & Cocktails"
   },
   "d": {
-   "en": "Premium spirits, craft cocktails, local beers and soft drinks — curated for every taste.",
+   "en": "Premium spirits, craft cocktails, local beers and soft drinks curated for every taste.",
    "fr": "Spiritueux premium, cocktails artisanaux, bières locales et boissons soft pour tous les goûts.",
    "ki": "Inzoga nziza, cocktails zidasanzwe, inzoga z'amoko yose n'akanovera kadasanzwe.",
-   "sw": "Vinywaji vya bei ghali, cocktails za kipekee, bia za ndani na vinywaji baridi — kwa kila ladha."
+   "sw": "Vinywaji vya bei ghali, cocktails za kipekee, bia za ndani na vinywaji baridi kwa kila ladha."
   }
  },
  {
@@ -1686,10 +1695,10 @@ const SERVICES = [
    "sw": "Huduma za Upishi"
   },
   "d": {
-   "en": "Professional catering for any event size — fresh, delicious, and always on time.",
-   "fr": "Traiteur professionnel pour tout type d'événement — frais, délicieux et toujours à l'heure.",
+   "en": "Professional catering for any event size fresh, delicious, and always on time.",
+   "fr": "Traiteur professionnel pour tout type d'événement frais, délicieux et toujours à l'heure.",
    "ki": "Turabategurira imfungurwa mu manza n'ibirori vyanyu tukabibazanira kandi ku gihe.",
-   "sw": "Upishi wa kitaalamu kwa tukio lolote — safi, ladha na daima kwa wakati."
+   "sw": "Upishi wa kitaalamu kwa tukio lolote safi, ladha na daima kwa wakati."
   }
  },
  {
@@ -1701,10 +1710,10 @@ const SERVICES = [
    "sw": "Sherehe & Matukio"
   },
   "d": {
-   "en": "Weddings, birthdays, anniversaries — we transform every occasion into a masterpiece.",
-   "fr": "Mariages, anniversaires, fêtes — nous transformons chaque occasion en chef-d'œuvre.",
-   "ki": "Ubukwe, anniversaire, iminsi mikuru — turabibafasha mu buryo bwiza kandi bwizewe.",
-   "sw": "Harusi, siku za kuzaliwa, miaka ya ndoa — tunabadilisha kila tukio kuwa kazi bora."
+   "en": "Weddings, birthdays, anniversaries, we transform every occasion into a masterpiece.",
+   "fr": "Mariages, anniversaires, fêtes, nous transformons chaque occasion en chef-d'œuvre.",
+   "ki": "Ubukwe, anniversaire, iminsi mikuru, turabibafasha mu buryo bwiza kandi bwizewe.",
+   "sw": "Harusi, siku za kuzaliwa, miaka ya ndoa, tunabadilisha kila tukio kuwa kazi bora."
   }
  },
  {
@@ -1731,10 +1740,10 @@ const SERVICES = [
    "sw": "Burudani"
   },
   "d": {
-   "en": "Live music, DJ nights and themed events — the perfect atmosphere for every mood.",
-   "fr": "Musique live, soirées DJ et événements à thème — l'ambiance parfaite pour chaque humeur.",
+   "en": "Live music, DJ nights and themed events, the perfect atmosphere for every mood.",
+   "fr": "Musique live, soirées DJ et événements à thème,l'ambiance parfaite pour chaque humeur.",
    "ki": "Umuziki ugezweho n'aba DJ bazi kuvanga imiziki, imipira mpuzamakungu,..",
-   "sw": "Muziki wa moja kwa moja, usiku wa DJ na matukio ya mandhari — mazingira bora kwa kila hisia."
+   "sw": "Muziki wa moja kwa moja, usiku wa DJ na matukio ya mandhari, mazingira bora kwa kila hisia."
   }
  }
 ];
@@ -1772,7 +1781,7 @@ const GALLERY = [
  {
   "img": "images/ttbImg7.jpeg",
   "t": "BBQ & Grills",
-  "d": "Our famous BBQ nights — smoky, tender meats cooked right before your eyes."
+  "d": "Our famous BBQ nights, smoky, tender meats cooked right before your eyes."
  },
  {
   "img": "images/ttbImg8.jpeg",
@@ -1792,7 +1801,7 @@ const GALLERY = [
  {
   "img": "images/ttbImg12.jpeg",
   "t": "Catering Services",
-  "d": "Professional catering for all sizes of events — always fresh, always on time."
+  "d": "Professional catering for all sizes of events, always fresh, always on time."
  },
  {
   "img": "images/ttbImg13.png",

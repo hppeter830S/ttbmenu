@@ -108,3 +108,19 @@ dialog h2{font-size:1.4rem;margin-right:30px} .sub{color:var(--gray);font-size:.
   .items{grid-template-columns:repeat(3,1fr)} .gal{grid-template-columns:repeat(4,1fr)}
   .logo{width:100px;height:100px}
 }
+
+/* ---- Cart ---- */
+body{padding-bottom:76px}                      /* room so the floating cart never hides the footer */
+.act{display:flex;justify-content:flex-end}
+.order{border:0;cursor:pointer}
+.qty{display:inline-flex;align-items:center;gap:10px;background:var(--bg3);border:1px solid var(--line);border-radius:12px;padding:3px}
+.qty button{width:30px;height:30px;border:0;border-radius:9px;background:var(--red);color:#fff;font-size:1.1rem;cursor:pointer}
+.qty b{min-width:20px;text-align:center}
+#cartbtn{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;
+  background:var(--green);color:#fff;border:0;border-radius:30px;padding:13px 24px;font-weight:700;cursor:pointer;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+#cartbtn[hidden]{display:none}
+.line{display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);font-size:.88rem}
+.line small{display:block;color:var(--gray)} .line>b{color:var(--gold);white-space:nowrap}
+.box .fields{margin:14px 0}
+.tot{display:flex;justify-content:space-between;font-size:1.15rem;margin:8px 0} .tot b{color:var(--gold)}
+.btn.full{width:100%;margin:6px 0} .btn.disabled{opacity:.4;pointer-events:none}

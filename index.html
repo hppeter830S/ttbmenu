@@ -79,6 +79,22 @@
     <img id="lb-img" alt="" /><div><h3 id="lb-t"></h3><p id="lb-d"></p></div>
   </div>
 
+  <!-- CART: floating button (count + total) and the cart popup -->
+  <button id="cartbtn" hidden></button>
+  <dialog id="cart"><div class="box">
+    <button type="button" class="x" data-close>✕</button>
+    <h2 data-i="cart"></h2>
+    <div id="cartlines"></div>
+    <div class="fields">
+      <label><span data-i="room"></span><select id="room"></select></label>
+      <label><span data-i="table"></span><select id="table"></select></label>
+    </div>
+    <p class="tot"><span data-i="total"></span><b id="carttotal"></b></p>
+    <p class="sub" data-i="pick"></p>
+    <a id="send" class="btn green full" target="_blank" data-i="send"></a>
+    <button type="button" class="btn" id="clear" data-i="clear"></button>
+  </div></dialog>
+
   <script src="data.js"></script>   <!-- your menu, services and gallery data -->
   <script src="script.js"></script> <!-- the logic -->
 </body>
