@@ -1692,7 +1692,7 @@ const MENU = [
     "p": "60,000 BIF"
    },
    {
-    "n": "Valeur G.",
+    "n": "Valeur P.",
     "p": "20,000 BIF"
    }
   ]
