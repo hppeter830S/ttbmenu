@@ -60,7 +60,7 @@ const MENU = [
      "ki": "Inkwavu yokeje",
      "sw": "Sungura wa Kukaanga"
     },
-    "p": "25,000 BIF"
+    "p": "30,000 BIF"
    },
    {
     "n": {
@@ -264,7 +264,7 @@ const MENU = [
      "ki": "1/2 Inkoko Prolor",
      "sw": "1/2 Kuku Prolor"
     },
-    "p": "60,000 BIF"
+    "p": "50,000 BIF"
    },
    {
     "n": {
@@ -301,7 +301,16 @@ const MENU = [
      "sw": "Kuku Kuoka"
     },
     "p": "100,000 BIF"
-   }
+   },
+   {
+    "n": {
+     "fr": "Umushito2 B Acco",
+     "en": "Umushito2 B Acco",
+     "ki": "Umushito2 B Acco",
+     "sw": "Umushito2 B Acco"
+    },
+    "p": "100,000 BIF"
+   },
   ]
  },
  {
@@ -414,6 +423,42 @@ const MENU = [
      "sw": "Mukeke Provençal"
     },
     "p": "40,000 BIF"
+   },
+   {
+    "n": {
+     "fr": "Sangala Provençal",
+     "en": "Provençal Sangala",
+     "ki": "Sangala Provençal",
+     "sw": "Sangala Provençal"
+    },
+    "p": "40,000 BIF"
+   },
+   {
+    "n": {
+     "fr": " Sangala Grille",
+     "en": "Grilled Mukeke",
+     "ki": "Umukeke Provençal",
+     "sw": "Mukeke Provençal"
+    },
+    "p": "40,000 BIF"
+   },
+   {
+    "n": {
+     "fr": "Sangala Roti",
+     "en": "Roti Sangala",
+     "ki": "Sangala Roti",
+     "sw": "Sangala Roti"
+    },
+    "p": "40,000 BIF"
+   },
+   {
+    "n": {
+     "fr": "Ndagala seche",
+     "en": "Dry Ndagala",
+     "ki": "Indagara zumye",
+     "sw": "Ndagaa"
+    },
+    "p": "40,000 BIF"
    }
   ]
  },
@@ -499,7 +544,7 @@ const MENU = [
      "ki": "Igice c'ivoka",
      "sw": "Kipande cha Parachichi"
     },
-    "p": "2,000 BIF"
+    "p": "3,000 BIF"
    }
   ]
  },
@@ -593,7 +638,7 @@ const MENU = [
      "ki": "Umukate",
      "sw": "Mkate"
     },
-    "p": "2,000 BIF"
+    "p": "1,500 BIF"
    },
    {
     "n": {
@@ -601,6 +646,15 @@ const MENU = [
      "en": "African Coffee",
      "ki": "Ikawa ya Afrika",
      "sw": "Kahawa ya Afrika"
+    },
+    "p": "8,000 BIF"
+   },
+   {
+    "n": {
+     "fr": "Miel",
+     "en": "Honey",
+     "ki": "Ubuki",
+     "sw": "Ubuki"
     },
     "p": "8,000 BIF"
    }
@@ -634,7 +688,7 @@ const MENU = [
      "ki": "Umurete n'Ibitunguru",
      "sw": "Mayai ya Vitunguu"
     },
-    "p": "8,000 BIF"
+    "p": "9,000 BIF"
    },
    {
     "n": {
@@ -643,7 +697,7 @@ const MENU = [
      "ki": "Umurete n'Itomate",
      "sw": "Mayai ya Nyanya"
     },
-    "p": "8,000 BIF"
+    "p": "9,000 BIF"
    },
    {
     "n": {
@@ -652,7 +706,7 @@ const MENU = [
      "ki": "Umurete n'ibitunguru n'itomate",
      "sw": "Mayai Vitunguu Nyanya"
     },
-    "p": "9,000 BIF"
+    "p": "10,000 BIF"
    },
    {
     "n": {
@@ -661,7 +715,7 @@ const MENU = [
      "ki": "Umurete n'Ifromage",
      "sw": "Mayai ya Jibini"
     },
-    "p": "10,000 BIF"
+    "p": "12,000 BIF"
    },
    {
     "n": {
@@ -746,7 +800,7 @@ const MENU = [
     "p": "9,000 BIF"
    },
    {
-    "n": {
+    "n":{
      "fr": "Sandwich Fromage",
      "en": "Cheese Sandwich",
      "ki": "Sandwichi y'Ifromage",
@@ -764,11 +818,11 @@ const MENU = [
     "p": "1,500 BIF"
    },
    {
-    "n": "Chapati",
-    "p": "2,500 BIF"
+    "n": "Capati",
+    "p": "2,000 BIF"
    },
    {
-    "n": "Lolex Omelette",
+    "n": "Rolex Omelette",
     "p": "13,000 BIF"
    },
    {
@@ -787,11 +841,15 @@ const MENU = [
     "ki": "Zingaro (Inyama n'ibihimba vy'ihene)",
     "sw": "Zingaro (Nyama na viungo vya ndani vya mbuzi)"
   },
-  "p": "15,000 BIF"
+  "p": "8,000 BIF"
 },
    {
     "n": "Agatoki",
     "p": "8,000 BIF"
+   },
+   {
+    "n": "Agatumbutumbu",
+    "p": "6,000 BIF"
    },
    {
     "n": "Agatoki Tumbu Tumbu",
@@ -854,7 +912,7 @@ const MENU = [
     "ki": "Ubugari bw'ingano",
     "sw": "Ugali wa ngano"
   },
-  "p": "5,000 BIF"
+  "p": "4,000 BIF"
 },
    {
     "n": {
@@ -872,7 +930,7 @@ const MENU = [
      "ki": "Ibirayi",
      "sw": "Viazi"
     },
-    "p": "5,000 BIF"
+    "p": "8,000 BIF"
    },
    {
     "n": {
@@ -881,7 +939,7 @@ const MENU = [
      "ki": "Igitoke",
      "sw": "Ndizi"
     },
-    "p": "5,000 BIF"
+    "p": "8,000 BIF"
    },
    {
     "n": {
@@ -899,7 +957,7 @@ const MENU = [
     "ki": "Ubushaza / Ubwishaza",
     "sw": "Njegere"
   },
-  "p": "5,000 BIF"
+  "p": "6,000 BIF"
 },
 {
   "n": {
@@ -908,7 +966,7 @@ const MENU = [
     "ki": "Irengarenga",
     "sw": "Lengalenga (Mboga za majani)"
   },
-  "p": " 2,000 BIF"
+  "p": " 4,000 BIF"
 },
 {
   "n": {
@@ -917,7 +975,7 @@ const MENU = [
     "ki": "Amashu",
     "sw": "Kabichi"
   },
-  "p": " 2,000 BIF"
+  "p": " 4,000 BIF"
 },
 {
   "n": {
@@ -926,7 +984,7 @@ const MENU = [
     "ki": "Amateke",
     "sw": "Magimbi"
   },
-  "p": " 5,000 BIF"
+  "p": " 8,000 BIF"
 },
    {
     "n": "Amarante",
@@ -942,12 +1000,21 @@ const MENU = [
    },
    {
     "n": {
-     "fr": "Mélange",
-     "en": "Mixed Sides",
-     "ki": "Meranje",
-     "sw": "Mchanganyiko"
+     "fr": "Mélange sans viande",
+     "en": "Mixed Sides without meat",
+     "ki": "Meranje itagira inyama",
+     "sw": "Mchanganyiko bila nyama"
     },
-    "p": "8,000 BIF"
+    "p": "10,000 BIF"
+   },
+   {
+    "n": {
+     "fr": "Mélange avec viande",
+     "en": "Mixed Sides with meat",
+     "ki": "Meranje hariko inyama",
+     "sw": "Mchanganyiko na nyama"
+    },
+    "p": "10,000 BIF"
    },
    {
     "n": {
@@ -956,7 +1023,7 @@ const MENU = [
      "ki": "Ifunguro risanzwe",
      "sw": "Chakula Rahisi"
     },
-    "p": "15,000 BIF"
+    "p": "10,000 BIF"
    },
    {
     "n": {
@@ -983,23 +1050,23 @@ const MENU = [
   "items": [
    {
     "n": "Primus 72cl (Big / Mammy)",
-    "p": "7,000 BIF"
+    "p": "5,500 BIF"
    },
    {
     "n": "Primus 50cl (Small / Baju)",
-    "p": "2,800 – 4,000 BIF"
+    "p": "4,000 BIF"
    },
    {
     "n": "Amstel Blonde 65cl",
-    "p": "10,000 BIF"
+    "p": "7,000 BIF"
    },
    {
     "n": "Amstel Blonde 50cl",
-    "p": "8,000 BIF"
+    "p": "5,000 BIF"
    },
    {
-    "n": "Amstel Royale 50cl / 65cl",
-    "p": "6,000 – 8,000 BIF"
+    "n": "Amstel Royale 65cl",
+    "p": "7,000 BIF"
    },
    {
     "n": "Amstel Bock 33cl",
@@ -1007,15 +1074,15 @@ const MENU = [
    },
    {
     "n": "Nyongera",
-    "p": "4,500 – 6,000 BIF"
+    "p": "6,000 BIF"
    },
    {
     "n": "Mutzig",
-    "p": "5,000 – 7,000 BIF"
+    "p": "7,000 BIF"
    },
    {
-    "n": "Primus Citron / Primus Black",
-    "p": "4,200 – 5,800 BIF"
+    "n": "Primus Black",
+    "p": "4000 BIF"
    },
    {
     "n": "Amstel Bright",
@@ -1028,7 +1095,7 @@ const MENU = [
      "ki": "Heineken",
      "sw": "Heineken"
     },
-    "p": "8,000 – 12,000 BIF"
+    "p": "15,000 BIF"
    },
    {
   "n": {
@@ -1037,15 +1104,15 @@ const MENU = [
     "ki": "Inzoga Bavaria (5% alcool)",
     "sw": "Bia ya Bavaria (5% pombe)"
   },
-  "p": " 8,000 – 12,000 BIF"
+  "p": "13,000 BIF"
 }
    ,{
     "n": "Bechou Blonde",
-    "p": "5,000 \u2013 7,000 BIF"
+    "p": "7,000 BIF"
    }
    ,{
     "n": "Bechou Bright",
-    "p": "5,000 \u2013 7,000 BIF"
+    "p": "5,000 BIF"
    }
    ,{
     "n": "Primus Star P.",
@@ -1053,31 +1120,35 @@ const MENU = [
    }
    ,{
     "n": "Royal",
-    "p": "5,000 \u2013 8,000 BIF"
+    "p": "7,000 BIF"
    }
    ,{
     "n": "Buryohe",
-    "p": "4,000 \u2013 6,000 BIF"
+    "p": "6,000 BIF"
    }
    ,{
     "n": "Basembi",
-    "p": "4,000 \u2013 6,000 BIF"
+    "p": "10,000 BIF"
    }
    ,{
     "n": "Leff",
-    "p": "8,000 \u2013 12,000 BIF"
+    "p": "15,000 BIF"
+   },
+   {
+    "n": "Skol",
+    "p": "12,000 BIF"
    }
    ,{
     "n": "Stella",
-    "p": "8,000 \u2013 12,000 BIF"
+    "p": "15,000 BIF"
    }
    ,{
     "n": "Gold Belge",
-    "p": "8,000 \u2013 12,000 BIF"
+    "p": "10,000 BIF"
    }
    ,{
     "n": "Akanovera",
-    "p": "4,000 \u2013 6,000 BIF"
+    "p": "3,000 BIF"
    }
   ]
  },
@@ -1095,19 +1166,27 @@ const MENU = [
   "items": [
    {
     "n": "Coca-Cola",
-    "p": "2,500 – 4,000 BIF"
+    "p": "3,000 BIF"
    },
    {
-    "n": "Fanta Orange / Citrus",
-    "p": "2,500 – 4,000 BIF"
+    "n": "Coca-Cola En bouteille plastique",
+    "p": "5,000 BIF"
+   },
+   {
+    "n": "Fanta Orange",
+    "p": "3,000 BIF"
+   },
+   {
+    "n": "Fanta Citron",
+    "p": "3,000 BIF"
    },
    {
     "n": "Sprite",
-    "p": "2,500 – 4,000 BIF"
+    "p": "3,000 BIF"
    },
    {
     "n": "Tonic Water / Schweppes",
-    "p": "2,800 – 4,200 BIF"
+    "p": "3,000 BIF"
    },
    {
     "n": {
@@ -1138,7 +1217,7 @@ const MENU = [
       "ki": "Amazi (Sangwe)",
       "sw": "Maji (Sangwe)"
     },
-    "p": "2,500 BIF"
+    "p": "3,000 BIF"
   },
   {
     "n": {
@@ -1151,35 +1230,35 @@ const MENU = [
   },
    {
     "n": "Soma",
-    "p": "2,500 \u2013 4,000 BIF"
+    "p": "7,000 BIF"
    }
    ,{
     "n": "Milinda",
-    "p": "2,500 \u2013 4,000 BIF"
+    "p": "5,000 BIF"
    }
    ,{
     "n": "Furaha",
-    "p": "2,500 \u2013 4,000 BIF"
+    "p": "3,500 BIF"
    }
    ,{
     "n": "Exo",
-    "p": "2,500 \u2013 4,000 BIF"
+    "p": "15,000 BIF"
    }
    ,{
     "n": "Inyange",
-    "p": "3,000 \u2013 5,000 BIF"
+    "p": "15,000 BIF"
    }
    ,{
     "n": "Coca-Cola P.",
-    "p": "2,500 \u2013 4,000 BIF"
+    "p": "2,500 BIF"
    }
    ,{
     "n": "Jambo",
-    "p": "2,500 \u2013 4,000 BIF"
+    "p": "2,500 BIF"
    }
    ,{
-    "n": "Raha",
-    "p": "2,500 \u2013 4,000 BIF"
+    "n": "Raha Tangawizi",
+    "p": "3,000 BIF"
    }
   ]
  },
@@ -1269,39 +1348,39 @@ const MENU = [
    }
    ,{
     "n": "OJ G.",
-    "p": "5,000 \u2013 8,000 BIF"
+    "p": "15,000 BIF"
    }
    ,{
     "n": "OJ P.",
-    "p": "3,000 \u2013 5,000 BIF"
+    "p": "10,000 BIF"
    }
    ,{
     "n": "Energy jus",
-    "p": "4,000 \u2013 6,000 BIF"
+    "p": "3,000 BIF"
    }
    ,{
     "n": "Drip Jus",
-    "p": "3,000 \u2013 5,000 BIF"
+    "p": "2,500 BIF"
    }
    ,{
     "n": "Embe",
-    "p": "3,000 \u2013 5,000 BIF"
+    "p": "2,500 BIF"
    }
    ,{
     "n": "Fanta Jus",
-    "p": "2,500 \u2013 4,000 BIF"
+    "p": "5,000 BIF"
    }
    ,{
     "n": "Ananas",
-    "p": "3,000 \u2013 5,000 BIF"
+    "p": "4,000 BIF"
    }
    ,{
     "n": "Pome",
-    "p": "3,000 \u2013 5,000 BIF"
+    "p": "2,500 BIF"
    }
    ,{
     "n": "Maracudja",
-    "p": "3,000 \u2013 5,000 BIF"
+    "p": "4,000 BIF"
    }
   ]
  },
@@ -1337,7 +1416,7 @@ const MENU = [
    }
    ,{
     "n": "Combuca",
-    "p": "4,000 \u2013 6,000 BIF"
+    "p": "4,000 BIF"
    }
   ]
  },
@@ -1372,11 +1451,11 @@ const MENU = [
    }
    ,{
     "n": "RedBull",
-    "p": "5,000 \u2013 8,000 BIF"
+    "p": "15,000 BIF"
    }
    ,{
     "n": "Kick",
-    "p": "3,500 \u2013 5,500 BIF"
+    "p": "35,000 BIF"
    }
    ,{
     "n": "Black",
@@ -1415,12 +1494,12 @@ const MENU = [
     "p": "2,500 – 5,000 BIF"
    }
    ,{
-    "n": "Hansams",
-    "p": "3,000 \u2013 5,000 BIF"
+    "n": "Hansons liqueur",
+    "p": "25,000 BIF"
    }
    ,{
-    "n": "Hansens",
-    "p": "3,000 \u2013 5,000 BIF"
+    "n": "Hansons",
+    "p": "10,000 BIF"
    }
   ]
  },
@@ -1474,131 +1553,147 @@ const MENU = [
    }
    ,{
     "n": "Smirnoff",
-    "p": "8,000 \u2013 15,000 BIF"
+    "p": "15,000 BIF"
    }
    ,{
     "n": "Marti Petit",
-    "p": "8,000 \u2013 12,000 BIF"
+    "p": "2,500 BIF"
    }
    ,{
     "n": "Van G.",
-    "p": "8,000 \u2013 12,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Van P.",
-    "p": "8,000 \u2013 12,000 BIF"
+    "p": "30,000 BIF"
    }
    ,{
-    "n": "Cellerdo",
-    "p": "25,000 \u2013 40,000 BIF"
+    "n": "Serengeti P.",
+    "p": "10,000 BIF"
+   },
+   {
+    "n": "Serengeti G.",
+    "p": "13,000 BIF"
    }
    ,{
     "n": "Drostdy G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "70,000 BIF"
    }
    ,{
     "n": "Drostdy P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "35,000 BIF"
    }
    ,{
     "n": "Cellar",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Burasine Blanc",
-    "p": "20,000 \u2013 35,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Burasine Jaune G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Burasine Jaune P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "30,000 BIF"
    }
    ,{
     "n": "Dompo G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Dompo P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "35,000 BIF"
    }
    ,{
     "n": "Altelis",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Image G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Image P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "35,000 BIF"
    }
    ,{
-    "n": "Allita",
-    "p": "20,000 \u2013 35,000 BIF"
+    "n": "Allita G.",
+    "p": "70,000 BIF"
+   },
+   {
+    "n": "Allita P.",
+    "p": "35,000 BIF"
    }
    ,{
     "n": "Torero G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Torero P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "25,000 BIF"
    }
    ,{
     "n": "Konyagi G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Konyagi P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "25,000 BIF"
    }
    ,{
     "n": "K. Vant G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "K. Vant P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "20,000 BIF"
    }
    ,{
     "n": "Vodka",
-    "p": "8,000 \u2013 15,000 BIF"
+    "p": "250,000 BIF"
    }
    ,{
     "n": "Oxenhams",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Alter Wine G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "60,000 BIF"
    }
    ,{
     "n": "Alter Wine P.",
-    "p": "15,000 \u2013 25,000 BIF"
+    "p": "30,000 BIF"
    }
    ,{
-    "n": "Heven",
-    "p": "25,000 \u2013 40,000 BIF"
-   }
+    "n": "Heven Avec alcool",
+    "p": "60,000 BIF"
+   },
+   {
+    "n": "Heven sans alcool",
+    "p": "60,000 BIF"
+   },
    ,{
     "n": "United",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "20,000 BIF"
    }
    ,{
     "n": "Henessy",
-    "p": "35,000 \u2013 60,000 BIF"
+    "p": "250,000 BIF"
    }
    ,{
     "n": "Akuki G.",
-    "p": "25,000 \u2013 40,000 BIF"
+    "p": "50,000 BIF"
    }
    ,{
-    "n": "Valeur",
-    "p": "25,000 \u2013 40,000 BIF"
+    "n": "Valeur G.",
+    "p": "60,000 BIF"
+   },
+   {
+    "n": "Valeur G.",
+    "p": "20,000 BIF"
    }
   ]
  },
