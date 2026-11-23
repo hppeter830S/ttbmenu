@@ -89,7 +89,16 @@
       <label><span data-i="room"></span><select id="room"></select></label>
       <label><span data-i="table"></span><select id="table"></select></label>
     </div>
+    <!-- Client details (both required) -->
+    <div class="fields">
+      <label><span data-i="cname"></span><input id="cname" autocomplete="name" /></label>
+      <label><span data-i="ccontact"></span><input id="ccontact" type="tel" value="+257" autocomplete="tel" /></label>
+    </div>
     <p class="tot"><span data-i="total"></span><b id="carttotal"></b></p>
+    <!-- Payment: method buttons + details of the chosen method (both built by script.js) -->
+    <h4 class="paytitle" data-i="payment"></h4>
+    <div class="pay" id="pays"></div>
+    <div id="payinfo"></div>
     <p class="sub" data-i="pick"></p>
     <a id="send" class="btn green full" target="_blank" data-i="send"></a>
     <button type="button" class="btn" id="clear" data-i="clear"></button>

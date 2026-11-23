@@ -26,7 +26,7 @@ const T = {
     msgOrder:(n)=>`Hello TTB, I would like to order 1x ${n} (Table/Delivery: ________)`,
     msgRes:(f)=>`Hello TTB, I would like to reserve a table.\nName: ${f.name}\nPeople: ${f.people}\nEvent: ${f.event}\nDate: ${f.date} at ${f.time}\nWhatsApp: ${f.phone}`,
     msgSvc:(n)=>`Hello TTB, I am interested in: ${n}` },
-  ki: { reserve:'Gufata', service:'Serivisi', gallery:'Amafoto', search:'Rondera ikiribwa…', explore:'Raba', cats:'amoko',
+  ki: { reserve:'Gufata', service:'Serivisi', gallery:'Amafoto', search:'Shakisha ikiribwa…', explore:'Raba', cats:'amoko',
     food:'Ibiribwa', drinks:'Ibinyobwa', back:'Subira inyuma', order:'Tumako', items:'ibintu', none:'Nta kibonetse',
     reserveSub:'Hitamo igihe, tuzogushimangira kuri WhatsApp.', people:'Umubare w’abantu', name:'Izina',
     date:'Itariki', time:'Isaha', event:'Ikiboneka', confirm:'Emeza', events:['Inama','Isabukuru','Ubukwe','Ifunguro','Ibindi'],
@@ -64,18 +64,65 @@ const CT = {
   en: { add:'Add', cart:'My cart', empty:'Your cart is empty.', room:'Room', table:'Table', total:'Total', clear:'Clear cart',
     send:'Order on WhatsApp', pick:'Choose the room and table to order.',
     msgCart:(l,t,r,n)=>`Hello TTB, I would like to order:\n\n${l.join('\n')}\n\nTotal: ${t}\nRoom: ${r}\nTable: ${n}` },
-  ki: { add:'Ongera', cart:'Panier', empty:'Panier irimwo ubusa.', room:'Sare', table:'Ameza', total:'Yose hamwe', clear:'futa panier',
-    send:'Tuma itegeko kuri WhatsApp', pick:'Hitamo Sare n’ameza kugira utumize.',
-    msgCart:(l,t,r,n)=>`Amahoro TTB, ndashaka gutumako :\n\n${l.join('\n')}\n\nYose hamwe : ${t}\nSare : ${r}\nAmeza : ${n}` },
+  ki: { add:'Ongera', cart:'Panier', empty:'Panier irimwo ubusa.', room:'Icumba', table:'Ameza', total:'Yose hamwe', clear:'Ruhuza',
+    send:'Tuma itegeko kuri WhatsApp', pick:'Hitamo icumba n’ameza kugira utumize.',
+    msgCart:(l,t,r,n)=>`Amahoro TTB, ndashaka gutumako :\n\n${l.join('\n')}\n\nYose hamwe : ${t}\nIcumba : ${r}\nAmeza : ${n}` },
   sw: { add:'Ongeza', cart:'Kikapu changu', empty:'Kikapu chako ki tupu.', room:'Chumba', table:'Meza', total:'Jumla', clear:'Futa kikapu',
     send:'Agiza kwa WhatsApp', pick:'Chagua chumba na meza ili kuagiza.',
     msgCart:(l,t,r,n)=>`Habari TTB, nataka kuagiza :\n\n${l.join('\n')}\n\nJumla : ${t}\nChumba : ${r}\nMeza : ${n}` }
 };
+// More texts for payment + client details (merged into CT above)
+const CT_MORE = {
+  fr: { hello:'Bonjour TTB, je voudrais commander :', tnone:'non précisée', cname:'Nom', ccontact:'Contact', payment:'Paiement', mcode:'Code marchand',
+    ref:'Référence de la transaction', paid:'J’ai payé', copy:'Copier', receiver:'Bénéficiaire', cashname:'À la caisse', cashinfo:'Vous pourrez payer à la caisse.',
+    cashmsg:'à la caisse (pas encore payé)', opt:'optionnel', pick:'Choisissez la salle, indiquez votre nom et contact, puis le mode de paiement.',
+    shot:'Après avoir envoyé votre commande, envoyez la capture du message de paiement dans la même conversation WhatsApp.', paynow:'Payer maintenant' },
+  en: { hello:'Hello TTB, I would like to order:', tnone:'not specified', cname:'Name', ccontact:'Contact', payment:'Payment', mcode:'Merchant code',
+    ref:'Transaction reference', paid:'I have paid', copy:'Copy', receiver:'Receiver', cashname:'At the cashier', cashinfo:'You can pay at the cashier.',
+    cashmsg:'at the cashier (not paid yet)', opt:'optional', pick:'Choose the room, enter your name and contact, then the payment method.',
+    shot:'After sending your order, send a screenshot of the payment message in the same WhatsApp chat.', paynow:'Pay now' },
+  ki: { hello:'Amahoro TTB, ndashaka gutumako :', tnone:'ntivyavuzwe', cname:'Izina', ccontact:'Itumanaho', payment:'Kwishura', mcode:'Kode y’umucuruzi',
+    ref:'Nimero y’ihererekanya', paid:'Narishuye', copy:'Kopora', receiver:'Uwakira', cashname:'Kuri caisse', cashinfo:'Urashobora kwishura kuri caisse.',
+    cashmsg:'kuri caisse (ntiyishuwe)', opt:'si ngombwa', pick:'Hitamo icumba, wandike izina n’itumanaho, hanyuma uburyo bwo kwishura.',
+    shot:'Umaze kurungika itegeko, rungika ifoto y’ubutumwa bwo kwishura muri iyo WhatsApp imwe.', paynow:'Ishura ubu' },
+  sw: { hello:'Habari TTB, nataka kuagiza :', tnone:'haijabainishwa', cname:'Jina', ccontact:'Mawasiliano', payment:'Malipo', mcode:'Namba ya mfanyabiashara',
+    ref:'Namba ya muamala', paid:'Nimelipa', copy:'Nakili', receiver:'Mpokeaji', cashname:'Kwa cashier', cashinfo:'Unaweza kulipa kwa cashier.',
+    cashmsg:'kwa cashier (bado haijalipwa)', opt:'si lazima', pick:'Chagua chumba, andika jina na mawasiliano, kisha njia ya malipo.',
+    shot:'Baada ya kutuma oda, tuma picha ya ujumbe wa malipo kwenye mazungumzo yaleyale ya WhatsApp.', paynow:'Lipa sasa' }
+};
+Object.keys(CT_MORE).forEach((l) => Object.assign(CT[l], CT_MORE[l]));
+
+// The 2 WhatsApp numbers for orders and bookings: one is picked at random for each order
+const NUMBERS = ['25767464004', '25779014493'];
+const pickNo = () => NUMBERS[Math.floor(Math.random() * NUMBERS.length)];
+const fmtNo = (n) => `+${n.slice(0, 3)} ${n.slice(3, 5)} ${n.slice(5, 7)} ${n.slice(7, 9)} ${n.slice(9)}`;   // 25767464004 -> +257 67 46 40 04
+const waTo = (num, msg) => `https://wa.me/${num}?text=${encodeURIComponent(msg)}`;
+// Payment methods (no "code" = pay at the cashier)
+const PAYS = [
+  { id: 'enoti', name: 'Bancobu eNoti', code: '17593', who: 'Serges', ussd: '*161#' },
+  { id: 'lumi', name: 'Lumicash', code: '865966', who: 'Donate Shop', ussd: '*163#' },
+  { id: 'cash' }
+];
+let pay = '', payRef = '', payPaid = false, orderNo = pickNo();   // current payment choice + the number used for this order
+
+function renderPay() {                         // draws the method buttons and the details of the chosen one
+  $('#pays').innerHTML = PAYS.map((p) => `<button type="button" class="chip ${pay === p.id ? 'on' : ''}" data-pay="${p.id}">${p.name || txt('cashname')}</button>`).join('');
+  const m = PAYS.find((p) => p.id === pay);
+  $('#payinfo').innerHTML = !m ? '' : !m.code ? `<div class="paybox"><p>${txt('cashinfo')}</p></div>` : `<div class="paybox">
+    <div class="code"><span>${txt('mcode')}</span><b>${m.code}</b><button type="button" class="btn" data-copy="${m.code}">${txt('copy')}</button></div>
+    <p>${txt('receiver')}: <b>${m.who}</b></p>
+    <a class="btn green" href="tel:${encodeURIComponent(m.ussd)}">📞 ${txt('paynow')} ${m.ussd}</a>   <!-- opens the dialer with the code typed; the client presses call -->
+    <p>📸 ${txt('shot')}</p>
+    <label class="chk"><input type="checkbox" id="paid" ${payPaid ? 'checked' : ''}> ${txt('paid')}</label>
+    <input id="ref" placeholder="${txt('ref')}" /></div>`;
+  if ($('#ref')) $('#ref').value = payRef;
+}
+
 // The 3 rooms (each has tables 1 to 20)
 const ROOMS = [
-  { en:'Main Room', fr:'Grande salle', ki:'sare nini', sw:'Chumba Kikuu' },
-  { en:'Small Room', fr:'Petite salle', ki:'sare ntoya', sw:'Chumba Kidogo' },
-  { en:'TV Room', fr:'Salle avec écran TV', ki:'sare irimwo tereviziyo', sw:'Chumba cha TV' }
+  { en:'Main Room', fr:'Grande salle', ki:'Icumba kinini', sw:'Chumba Kikuu' },
+  { en:'Small Room', fr:'Petite salle', ki:'Icumba gitoyi', sw:'Chumba Kidogo' },
+  { en:'TV Room', fr:'Salle avec écran TV', ki:'Icumba c’ishusho ya TV', sw:'Chumba cha TV' }
 ];
 // Give every dish an id and a numeric price ("20,000 BIF" -> 20000). ALL[id] finds a dish quickly.
 const ALL = [];
@@ -109,12 +156,19 @@ function renderCart() {                        // redraws the floating button, t
     <div class="qty"><button data-dec="${i}">−</button><b>${cart[i]}</b><button data-inc="${i}">+</button></div>
     <b>${fmt(ALL[i].num * cart[i])}</b></div>`).join('') || `<p class="sub">${txt('empty')}</p>`;
   $('#carttotal').textContent = fmt(total);
-  const room = $('#room').value, table = $('#table').value, send = $('#send');
-  const ready = count && room !== '' && table !== '';        // order only when room AND table are chosen
+  payRef = $('#ref') ? $('#ref').value : payRef;             // remember what was typed / ticked
+  payPaid = $('#paid') ? $('#paid').checked : payPaid;
+  const room = $('#room').value, table = $('#table').value, name = $('#cname').value.trim(), contact = $('#ccontact').value.trim(), send = $('#send');
+  const m = PAYS.find((p) => p.id === pay);
+  const payOK = m && (!m.code || (payPaid && payRef.trim()));   // cashier: OK at once; Lumicash/eNoti: must tick "I have paid" + give the reference
+  const ready = count && room !== '' && name && contact.length > 4 && payOK;   // room is required, table is optional
   send.classList.toggle('disabled', !ready);
   if (ready) {
     const lines = ids.map((i) => `${cart[i]}x ${tr(ALL[i].n)} — ${fmt(ALL[i].num * cart[i])}`);
-    send.href = wa(txt('msgCart')(lines, fmt(total), tr(ROOMS[room]), table));
+    const payText = m.code ? `${m.name} (${txt('mcode')} ${m.code}) — ${txt('ref')}: ${payRef.trim()}` : txt('cashmsg');
+    const msg = [txt('hello'), '', ...lines, '', `${txt('total')}: ${fmt(total)}`, `${txt('room')}: ${tr(ROOMS[room])}`,
+      `${txt('table')}: ${table || txt('tnone')}`, '', `${txt('cname')}: ${name}`, `${txt('ccontact')}: ${contact}`, `${txt('payment')}: ${payText}`].join('\n');
+    send.href = waTo(orderNo, msg);            // the complete message, ready to send
   } else send.removeAttribute('href');
 }
 
@@ -180,8 +234,9 @@ function applyLang() {
       <img src="images/${FLAGS[l]}" alt="">${l.toUpperCase()}</button>`).join('');
   const r = $('#room').value, t = $('#table').value;     // keep the choices when the language changes
   $('#room').innerHTML = `<option value="">${txt('room')}…</option>` + ROOMS.map((x, i) => `<option value="${i}">${tr(x)}</option>`).join('');
-  $('#table').innerHTML = `<option value="">${txt('table')}…</option>` + Array.from({ length: 20 }, (_, i) => `<option>${i + 1}</option>`).join('');
+  $('#table').innerHTML = `<option value="">${txt('table')} (${txt('opt')})…</option>` + Array.from({ length: 20 }, (_, i) => `<option>${i + 1}</option>`).join('');
   $('#room').value = r; $('#table').value = t;
+  renderPay();
   renderCart();
   render();
 }
@@ -205,7 +260,7 @@ document.addEventListener('keydown', (e) => e.key === 'Escape' && closeLB());
 $('#rform').addEventListener('submit', (e) => {      // reservation -> open WhatsApp with the details
   e.preventDefault();
   const f = Object.fromEntries(new FormData(e.target));
-  window.open(wa(txt('msgRes')(f)), '_blank');
+  window.open(waTo(pickNo(), txt('msgRes')(f)), '_blank');   // bookings also use a random one of the 2 numbers
   $('#reserve').close();
 });
 
@@ -218,5 +273,14 @@ $('#cartbtn').addEventListener('click', () => $('#cart').showModal());
 $('#room').addEventListener('change', renderCart);
 $('#table').addEventListener('change', renderCart);
 $('#clear').addEventListener('click', () => { cart = {}; try { localStorage.removeItem('ttb-cart'); } catch (e) {} renderCart(); render(); });
+
+// Payment events: choose a method, copy the code, type in the cart, send the order
+document.addEventListener('click', (e) => {
+  const pb = e.target.closest('[data-pay]'), cp = e.target.closest('[data-copy]');
+  if (pb) { pay = pb.dataset.pay; renderPay(); renderCart(); }
+  if (cp) { try { navigator.clipboard.writeText(cp.dataset.copy); } catch (err) {} cp.textContent = '✓'; }
+});
+['input', 'change'].forEach((ev) => $('#cart').addEventListener(ev, renderCart));   // re-check the form on every change
+$('#send').addEventListener('click', () => setTimeout(() => { orderNo = pickNo(); renderPay(); renderCart(); }, 400));   // next order = new random number
 
 applyLang();   // start!
